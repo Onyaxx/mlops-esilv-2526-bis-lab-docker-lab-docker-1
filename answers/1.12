@@ -1,0 +1,2 @@
+docker run -d --name back -p 8080:5000 -e CURRENT_ENVIRONMENT=dev onyax/mon-back:v1
+docker run -d --name front -p 8081:80 -e WS_BACK_URL=http://localhost:8080 onyax/mon-front:v1
